@@ -9,13 +9,13 @@ import com.qa.nationallottery.contants.AppConstants;
 
 public class LoginPageTest extends BaseTest {
 
-	@Test(priority = 1)
+	@Test(priority = 2)
 	public void loginPageTitleTest() {
 		String title = loginpage.getLoginPageTitle();
 		Assert.assertEquals(title, AppConstants.LOGIN_PAGE_TITLE);
 	}
 
-	@Test (priority = 2)
+	@Test (priority = 1)
 	public void loginPageCuurentURL() {
 		String URL = loginpage.getLoginPageURL();
 		Assert.assertEquals(URL,AppConstants.LOGIN_PAGE_URL);
