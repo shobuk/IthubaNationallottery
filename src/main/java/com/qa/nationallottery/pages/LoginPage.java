@@ -4,7 +4,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 import com.qa.nationallottery.util.ElementUtil;
-import com.qa.opencart.constants.AppConstants;
+
+import com.qa.nationallottery.contants.AppConstants;
 
 public class LoginPage {
 	private WebDriver driver;
@@ -23,14 +24,14 @@ public class LoginPage {
 	}
 	public String getLoginPageTitle() {
 		
-		String title =  eleUtil.waitForTitleIs(AppConstants.LOGIN_PAGE_URL_FRACTION, AppConstants.SHORT_DEFAULT_WAIT);
+		String title =  eleUtil.waitForTitleIs(AppConstants.LOGIN_PAGE_TITLE, AppConstants.SHORT_DEFAULT_WAIT);
 		System.out.println(title);
 		return title;
 	}
 	
 	public String getLoginPageURL() {
 		
-		String url = eleUtil.waitForURLContains(AppConstants.LOGIN_PAGE_URL_FRACTION, AppConstants.SHORT_DEFAULT_WAIT);
+		String url = eleUtil.waitForURLContains(AppConstants.LOGIN_PAGE_URL, AppConstants.SHORT_DEFAULT_WAIT);
 		System.out.println(url);
 		return url;
 	}

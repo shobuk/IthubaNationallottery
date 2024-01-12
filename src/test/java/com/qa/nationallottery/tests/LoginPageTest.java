@@ -4,7 +4,8 @@ import org.junit.Assert;
 import org.testng.annotations.Test;
 
 import com.qa.nationallottery.base.BaseTest;
-import com.qa.opencart.constants.AppConstants;
+import com.qa.nationallottery.contants.AppConstants;
+
 
 public class LoginPageTest extends BaseTest {
 
@@ -17,7 +18,7 @@ public class LoginPageTest extends BaseTest {
 	@Test (priority = 2)
 	public void loginPageCuurentURL() {
 		String URL = loginpage.getLoginPageURL();
-		Assert.assertEquals(URL,AppConstants.LOGIN_PAGE_URL_FRACTION);
+		Assert.assertEquals(URL,AppConstants.LOGIN_PAGE_URL);
 	}
 
 	@Test(priority = 3)
