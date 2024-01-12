@@ -32,7 +32,7 @@ public class LoginPageTest extends BaseTest {
 		Assert.assertTrue(loginpage.getforgotLinkDisplay());
 	}
 
-	@Test (priority = 5)
+	@Test (priority = 6)
 	public void loginTest() throws InterruptedException {
 		accPage = loginpage.doLogin(prop.getProperty("username"),prop.getProperty("password"));
 		Assert.assertTrue(accPage.logoutLinkIsVisiable());
